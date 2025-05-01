@@ -1,4 +1,4 @@
-module github.com/willthrom/outlook-msg-parser
+module github.com/useti/outlook-msg-parser
 
 go 1.22.4
 
