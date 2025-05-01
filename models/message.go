@@ -42,6 +42,7 @@ type Message struct {
 
 type Attachment struct {
 	Name string
+	Path []string
 	// Add other relevant fields as needed
 }
 
@@ -646,6 +647,7 @@ func (res *Message) HandleAttachment(entry *mscfb.File) {
 	// For example, store the attachment in a separate list or map
 	attachment := Attachment{
 		Name: entry.Name,
+		Path: entry.Path,
 		// Add other relevant fields and processing as needed
 	}
 	res.Attachments = append(res.Attachments, attachment)
